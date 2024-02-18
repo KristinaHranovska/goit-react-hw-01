@@ -2,12 +2,12 @@ import userDate from "../Profile/userDate.json";
 import friends from "../FriendsList/friends.json";
 import transactions from "../TransactionHistory/transactions.json";
 
-import { Container } from "./App.styled.js";
-import { Profile } from "../Profile/Profile.jsx";
-import { FriendList } from "../FriendsList/FriendList.jsx";
-import { TransactionHistory } from "../TransactionHistory/TransactionHistory.jsx";
+import Container from "./App.styled.js";
+import Profile from "../Profile/Profile.jsx";
+import FriendList from "../FriendsList/FriendList.jsx";
+import TransactionHistory from "../TransactionHistory/TransactionHistory.jsx";
 
-export const App = () => {
+export default function App() {
   return (
     <Container>
       <Profile
@@ -21,4 +21,4 @@ export const App = () => {
       <TransactionHistory items={transactions} />
     </Container>
   );
-};
+}

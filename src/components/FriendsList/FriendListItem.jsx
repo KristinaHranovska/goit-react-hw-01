@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 import css from "./FriendListItem.module.css";
 
-export const FriendListItem = ({ avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={css.item}>
       <img className={css.avatar} src={avatar} alt="Avatar" width="48" />
@@ -24,3 +24,5 @@ FriendListItem.propTypes = {
   name: PropTypes.string,
   isOnline: PropTypes.bool.isRequired,
 };
+
+export default FriendListItem;

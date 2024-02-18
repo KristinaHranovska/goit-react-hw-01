@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 import css from "./Profile.module.css";
 
-export const Profile = ({
+const Profile = ({
   username,
   tag,
   location,
@@ -42,3 +42,5 @@ Profile.propTypes = {
   avatar: PropTypes.string,
   stats: PropTypes.objectOf(PropTypes.number),
 };
+
+export default Profile;
